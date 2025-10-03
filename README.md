@@ -111,5 +111,4 @@ docker compose down -v
 ---
 
 ## 🙏 Acknowledgments
-
-Special thanks to ENG Mohamed Hamed for their guidance
+Special thanks to Eng. Mohamed Hamed for his guidance.
