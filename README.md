@@ -8,7 +8,7 @@ docker compose up airflow-init
 
 docker compose up -d
 
-!(images/dcokerscreenshot.png)
+![Docker Screenshot](images/dcokerscreenshot.png)
 
 ##
 ### Second step:
@@ -40,11 +40,11 @@ task1 >> task2 >> task3
 ### Forth step:
 go to airflow home page and refresh, you will find a dag with the dag id you typed in the script.
 
-## image ##
+![airflow home page](images/dagid.png)
 ### Finally:
 unpause the dag and go to the graph section you will find that all the three tasks are running successfully
-### image ###
 
+![running tasks](images/airflowdagui.png)
 output of the task 1:image
 
 
