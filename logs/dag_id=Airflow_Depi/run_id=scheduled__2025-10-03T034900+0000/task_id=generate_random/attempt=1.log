@@ -1,0 +1,24 @@
+[2025-10-03T03:50:11.390+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-03T03:50:11.420+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Airflow_Depi.generate_random scheduled__2025-10-03T03:49:00+00:00 [queued]>
+[2025-10-03T03:50:11.431+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Airflow_Depi.generate_random scheduled__2025-10-03T03:49:00+00:00 [queued]>
+[2025-10-03T03:50:11.434+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-03T03:50:11.457+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_random> on 2025-10-03 03:49:00+00:00
+[2025-10-03T03:50:11.468+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=132) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-03T03:50:11.471+0000] {standard_task_runner.py:63} INFO - Started process 134 to run task
+[2025-10-03T03:50:11.471+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Depi', 'generate_random', 'scheduled__2025-10-03T03:49:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpt9udvxrl']
+[2025-10-03T03:50:11.475+0000] {standard_task_runner.py:91} INFO - Job 25: Subtask generate_random
+[2025-10-03T03:50:11.496+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-10-03T03:50:11.559+0000] {task_command.py:426} INFO - Running <TaskInstance: Airflow_Depi.generate_random scheduled__2025-10-03T03:49:00+00:00 [running]> on host 250874de65b0
+[2025-10-03T03:50:11.689+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Airflow_Depi' AIRFLOW_CTX_TASK_ID='generate_random' AIRFLOW_CTX_EXECUTION_DATE='2025-10-03T03:49:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-03T03:49:00+00:00'
+[2025-10-03T03:50:11.692+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-03T03:50:11.694+0000] {logging_mixin.py:188} INFO - Random number 38 saved to /tmp/random.txt
+[2025-10-03T03:50:11.694+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-03T03:50:11.695+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-03T03:50:11.708+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Airflow_Depi, task_id=generate_random, run_id=scheduled__2025-10-03T03:49:00+00:00, execution_date=20251003T034900, start_date=20251003T035011, end_date=20251003T035011
+[2025-10-03T03:50:11.767+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-03T03:50:11.789+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-03T03:50:11.794+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
