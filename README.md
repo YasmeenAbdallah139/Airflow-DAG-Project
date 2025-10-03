@@ -8,7 +8,7 @@ docker compose up airflow-init
 
 docker compose up -d
 
-images/dcokerscreenshot.png
+(images/dcokerscreenshot.png)
 
 ##
 ### Second step:
